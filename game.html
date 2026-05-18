@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Censorship Game</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/x-icon" href="/favicon.svg">
+</head>
+<body>
+    <div class="document-container">
+        <div class="header">
+        </div>
+        <div id="memo-text"></div>
+        <div id="document-source"></div>
+    </div>
+
+    <div id="popup-container"></div>
+    
+    <div id="warning-box" class="warning-hidden">
+        <span class="warning-icon">⚠</span>
+        <span class="warning-text">CORRUPTION DETECTED: CENSORSHIP BEYOND ACCEPTABLE LEVELS</span>
+    </div>
+
+    <div class="controls">
+        <button id="reveal-btn">Reveal The Poetry</button>
+        <button id="reset-btn">Reset Document</button>
+        <button id="next-btn">Next Document</button>
+    </div>
+
+    <div id="comparison-dashboard" class="dashboard" style="display: none;">
+        <div class="stat-box">
+            <span class="label">Original Volume</span>
+            <span id="original-count" class="value">0</span>
+        </div>
+        <div class="stat-box">
+            <span class="label">Words Suppressed</span>
+            <span id="redacted-count" class="value">0</span>
+        </div>
+        <div class="stat-box">
+            <span class="label">Censorship %</span>
+            <span id="censorship-pct" class="value">0%</span>
+        </div>
+        <div class="result-label">The Resulting Truth:</div>
+    </div>
+    
+    <div id="final-poem"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
